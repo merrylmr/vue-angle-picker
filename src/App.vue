@@ -7,23 +7,33 @@
 </template>
 
 <script>
-//import HelloWorld from './components/HelloWorld.vue'
-import Home from './Home.vue'
+  //import HelloWorld from './components/HelloWorld.vue'
+  import Home from './Home.vue'
 
-export default {
-  name: 'app',
-  components: {
+  export default {
+    name: 'app',
+    components: {
 //    HelloWorld
-    Home
+      Home
+    }
   }
-}
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-}
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
+  }
 </style>

@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <!--<img alt="Vue logo" src="./assets/logo.png">-->
     <home></home>
     <!--<HelloWorld msg="Welcome to Your Vue.js App"/>-->
   </div>
@@ -24,6 +23,7 @@
   body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
   }
 
   h1 {

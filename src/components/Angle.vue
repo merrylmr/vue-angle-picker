@@ -1,9 +1,9 @@
 <template>
-  <div class="angle-comp">
+  <div class="angle-comp" :class="[theme]">
     <div class="circle" ref="circle">
       <div class="c-pointer"
            @mousedown="mousedownHandle"
-           :style="{'transform':`rotate(${angle}deg)`}">
+           :style="{'transform':`rotate(${closeWise?angle:-angle}deg)`}">
         <div class="c-center"></div>
         <div class="c-line"></div>
       </div>
@@ -25,6 +25,14 @@
     props: {
       angle: {
         type: Number
+      },
+      theme: {
+        type: String,
+        default: ''
+      },
+      closeWise: {
+        type: Boolean,
+        default: true
       }
     },
     methods: {
@@ -39,7 +47,7 @@
         const centerPos = this.getCenterPos()
         let mouseMove = (e) => {
           console.log('centerPos', centerPos)
-          let angle = getAngle(centerPos.x, centerPos.y, e.clientX, e.clientY)
+          let angle = getAngle(centerPos.x, centerPos.y, e.clientX, e.clientY, this.closeWise)
           console.log('angle', angle)
           this.$emit('change', angle)
         }
@@ -55,7 +63,7 @@
   }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
   .angle-comp {
     width: 100px;
     text-align: center;
@@ -88,9 +96,30 @@
   }
 
   .c-line {
+    position: relative;
     margin-top: 1.5px;
     margin-right: -2px;
     height: 1px;
     background: #000;
+  }
+
+  .theme2 {
+    .c-center {
+      display: none;
+    }
+    .c-line {
+      height: 0;
+      &:after {
+        content: '';
+        width: 10px;
+        height: 10px;
+        display: block;
+        background: orange;
+        position: absolute;
+        left: 100%;
+        margin-left: -5px;
+        border-radius: 50%;
+      }
+    }
   }
 </style>

@@ -21,12 +21,7 @@
   </div>
 </template>
 <script>
-//  import AngleComp from './angle/Angle.vue'
-
-  import AngleComp from './angle/Angle.vue'
-
 export default {
-  components: {AngleComp},
   name: 'Home',
     data() {
       return {

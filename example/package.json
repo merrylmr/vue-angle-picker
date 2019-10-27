@@ -9,8 +9,10 @@
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0",
     "vue": "^2.6.10",
-    "vue-angle-picker": "^1.0.1"
+    "vue-angle-picker": "^1.0.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.1.1",

@@ -1,6 +1,6 @@
 {
   "name": "vue-angle-picker",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "angle picker",
   "main": "index.js",
   "directories": {
@@ -12,6 +12,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/merrylmr/vue-angle-picker.git"
+  },
   "author": "merrylmr",
   "license": "ISC",
   "bugs": {

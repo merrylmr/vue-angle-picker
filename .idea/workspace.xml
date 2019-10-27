@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="598ce35a-4a45-4212-8597-13035109ef85" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vue-angle-picker.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -51,10 +55,10 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+            <state relative-caret-position="294">
+              <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
               <folding>
-                <marker date="1572193141067" expanded="true" signature="252:339" ph="{&quot;type&quot;: &quot;git&quot;...}" />
+                <marker date="1572193569945" expanded="true" signature="252:344" ph="{&quot;type&quot;: &quot;git&quot;...}" />
               </folding>
             </state>
           </provider>
@@ -223,7 +227,7 @@
       <workItem from="1572096779862" duration="6736000" />
       <workItem from="1572185386242" duration="6404000" />
       <workItem from="1572192531089" duration="306000" />
-      <workItem from="1572192888207" duration="382000" />
+      <workItem from="1572192888207" duration="653000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目">
       <created>1571932558439</created>
@@ -285,7 +289,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18977000" />
+    <option name="totallyTimeSpent" value="19248000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -472,10 +476,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        <state relative-caret-position="294">
+          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
           <folding>
-            <marker date="1572193141067" expanded="true" signature="252:339" ph="{&quot;type&quot;: &quot;git&quot;...}" />
+            <marker date="1572193569945" expanded="true" signature="252:344" ph="{&quot;type&quot;: &quot;git&quot;...}" />
           </folding>
         </state>
       </provider>

@@ -2,7 +2,7 @@
   "name": "vue-angle-picker",
   "version": "1.0.1",
   "description": "angle picker",
-  "main": "angle/index.js",
+  "main": "index.js",
   "directories": {
     "example": "example"
   },

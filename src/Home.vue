@@ -4,28 +4,30 @@
     <h1>vue angle picker</h1>
     <h3>A fun way to choose angles in a web page</h3>
     <div class="demo-list">
-      <AngleComp :angle="angle0"
+      <angle-comp :angle="angle0"
                  :closeWise="false"
-                 @change="changeAngle($event,0)"></AngleComp>
-      <AngleComp :angle="angle1"
+                 @change="changeAngle($event,0)"></angle-comp>
+      <angle-comp :angle="angle1"
                  :closeWise="true"
                  :theme="'theme2'"
-                 @change="changeAngle($event,1)"></AngleComp>
+                 @change="changeAngle($event,1)"></angle-comp>
     </div>
 
+    <!--图片旋转-->
     <div :style="{'transform':`rotate(${angle1}deg)`}"
-
          style="width:200px;height:200px;margin:0 auto;">
       <img alt="Vue logo" src="./assets/logo.png">
     </div>
-
   </div>
 </template>
 <script>
-  import AngleComp from './components/Angle.vue'
+//  import AngleComp from './angle/Angle.vue'
 
-  export default {
-    name: 'Home',
+  import AngleComp from './angle/Angle.vue'
+
+export default {
+  components: {AngleComp},
+  name: 'Home',
     data() {
       return {
         angle0: 90,
@@ -34,9 +36,9 @@
         angle3: 270,
       }
     },
-    components: {
-      AngleComp
-    },
+//    components: {
+//      AngleComp
+//    },
     methods: {
       changeAngle(data, index) {
         switch (index) {
@@ -58,11 +60,12 @@
   }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
   .home-page {
     width: 100%;
     min-height: 100vh;
     text-align: center;
+    height: 100%;
   }
 
   .demo-list {

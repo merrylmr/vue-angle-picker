@@ -13,23 +13,24 @@
 </template>
 
 <script>
-  import {getAngle} from '../js/angle'
+  import {getAngle} from './angle'
 
   export default {
     name: 'angle-comp',
     data() {
       return {
-//        angle: 0
       }
     },
     props: {
       angle: {
         type: Number
       },
+      // 风格
       theme: {
         type: String,
         default: ''
       },
+      // 顺时针还是逆时针
       closeWise: {
         type: Boolean,
         default: true
@@ -46,9 +47,7 @@
       mousedownHandle(e) {
         const centerPos = this.getCenterPos()
         let mouseMove = (e) => {
-          console.log('centerPos', centerPos)
           let angle = getAngle(centerPos.x, centerPos.y, e.clientX, e.clientY, this.closeWise)
-          console.log('angle', angle)
           this.$emit('change', angle)
         }
         let mouseUp = (e) => {
@@ -73,7 +72,7 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 2px solid #000;
+    border: 2px solid #050001;
     position: relative;
   }
 
@@ -114,7 +113,7 @@
         width: 10px;
         height: 10px;
         display: block;
-        background: orange;
+        background: #29aadf;
         position: absolute;
         left: 100%;
         margin-left: -5px;

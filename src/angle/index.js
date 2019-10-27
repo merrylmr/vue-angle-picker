@@ -1,7 +1,6 @@
-import angleComp from './Angle.vue'
+import anglePicker from './Angle.vue'
 
 const install = function (Vue) {
-  console.log('angleComp',angleComp.name)
-  Vue.component(angleComp.namae, angleComp)
+  Vue.component(anglePicker.name, anglePicker)
 }
-export default angleComp
+export default install

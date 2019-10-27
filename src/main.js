@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
-import angleComp from './angle/index.js'
+import anglePicker from './angle/index.js'
 
-Vue.use(angleComp)
+Vue.use(anglePicker)
 
 Vue.config.productionTip = false
 

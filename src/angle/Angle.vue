@@ -1,5 +1,5 @@
 <template>
-  <div class="angle-comp" :class="[theme]">
+  <div class="angle-picker" :class="[theme]">
     <div class="circle" ref="circle">
       <div class="c-pointer"
            @mousedown="mousedownHandle"
@@ -16,7 +16,7 @@
   import {getAngle} from './angle'
 
   export default {
-    name: 'angle-comp',
+    name: 'angle-picker',
     data() {
       return {
       }
@@ -63,7 +63,7 @@
 </script>
 
 <style scoped lang="scss">
-  .angle-comp {
+  .angle-picker {
     width: 100px;
     text-align: center;
   }

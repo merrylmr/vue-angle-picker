@@ -4,13 +4,13 @@
     <h1>vue angle picker</h1>
     <h3>A fun way to choose angles in a web page</h3>
     <div class="demo-list">
-      <angle-comp :angle="angle0"
+      <angle-picker :angle="angle0"
                  :closeWise="false"
-                 @change="changeAngle($event,0)"></angle-comp>
-      <angle-comp :angle="angle1"
+                 @change="changeAngle($event,0)"></angle-picker>
+      <angle-picker :angle="angle1"
                  :closeWise="true"
                  :theme="'theme2'"
-                 @change="changeAngle($event,1)"></angle-comp>
+                 @change="changeAngle($event,1)"></angle-picker>
     </div>
 
     <!--图片旋转-->

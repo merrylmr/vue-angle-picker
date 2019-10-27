@@ -1,4 +1,4 @@
-import anglePicker from './Angle.vue'
+import anglePicker from './angle/Angle.vue'
 
 const install = function (Vue) {
   Vue.component(anglePicker.name, anglePicker)

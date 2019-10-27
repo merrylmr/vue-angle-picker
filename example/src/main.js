@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
-import anglePicker from './angle/index.js'
+import anglePicker from 'vue-angle-picker'
 
 Vue.use(anglePicker)
 

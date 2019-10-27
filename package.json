@@ -12,7 +12,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/merrylmr/vue-angle-picker.git"
-  },
   "author": "merrylmr",
   "license": "ISC",
   "bugs": {
